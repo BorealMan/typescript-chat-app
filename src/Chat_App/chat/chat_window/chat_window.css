@@ -1,5 +1,18 @@
 
 .chat-window {
-    height: 500%;
+    height: 80%;
     border: 1px solid red;
+    display: block;
+
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.message-holder{
+    display:inline-block;
+    color: white;
 }
