@@ -8,3 +8,28 @@
     background-color: lavender;
     border: 1px solid black;
 }
+
+.room-title {
+    margin-left: .2rem;
+    margin-bottom: .1rem;
+    text-align: left;
+}
+
+.room-container {
+    text-align: left;
+    margin-left: .4rem;
+}
+
+/* .room-display::before {
+    content: "Join: ";
+}
+
+.room-display::after {
+    content: ""
+} */
+
+.room-display:hover {
+    letter-spacing: 1px;
+    background-color: darkgrey;
+    cursor: pointer;
+}

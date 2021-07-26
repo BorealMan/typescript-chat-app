@@ -4,8 +4,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 1px;
-    justify-content: center;
-    align-items: center;
 }
 
 .message-input{
@@ -30,4 +28,5 @@
 .send-message:hover {
     letter-spacing: 1px;
     background-color: greenyellow;
+    cursor: pointer;
 }

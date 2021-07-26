@@ -1,5 +1,9 @@
+
 .title {
-    padding: 2px;
-    background-color: darkgrey;
+    height: 20%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .1rem;
+    background-color: lightgrey;
     border: 1px solid black;
 }

@@ -4,9 +4,12 @@ import './rooms.css'
 const rooms = () => {
     return (
         <div className='rooms'>
-            <h3>Rooms </h3>
-            <p>Fishing Talk</p>
-            <p>Tree Watching</p>
+            <h2 className="room-title">Rooms: </h2>
+            <div className='room-container'>
+                <div className='room-display'>Fishing Talk</div>
+                <div className='room-display'>Tree Watching</div>
+            </div>
+
         </div>
     )
 }
