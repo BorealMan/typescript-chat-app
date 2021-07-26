@@ -19,6 +19,9 @@
 }
 
 .send-message {
+    border: 1px solid black;
+    border-radius: 3%;
+    margin-left: 1px;
     width: 20%;
     height: 6rem;
     padding: .2rem;

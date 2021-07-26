@@ -1,8 +1,10 @@
 
 .chat-window {
     border: 1px solid black;
+    border-radius: 3%;
     height: 80%;
     display: block;
+    background-color: white;
 }
 
 .messages{

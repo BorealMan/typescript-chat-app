@@ -4,10 +4,8 @@
 
 .App {
   margin: .3rem auto;
-  border: 1px solid black;
   width: 50rem;
   height: 32rem;
   text-align: center;
   justify-content: center;
-
 }
