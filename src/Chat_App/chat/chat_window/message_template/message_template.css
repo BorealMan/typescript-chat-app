@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.message-template {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: lightblue;
+  padding: 0.5rem;
+}
+
+.message-package {
+  display: block;
+  width: 100%;
+}
+
+.user-icon {
+  display: block;
+  max-height: 2.5rem;
+  max-width: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.user-icon:hover {
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.user-name {
+  text-align: left;
+  margin-right: 2px;
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.user-name:hover {
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.message-text {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.time-stamp {
+  text-align: right;
+}
