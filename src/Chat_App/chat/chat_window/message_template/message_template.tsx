@@ -1,18 +1,30 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import './message_template.css'
-import r_img from './default_images/r.png'
 
-const message_template = () => {
+let count = 0;
+
+const Message_Template = (props: any) => {
+    count += 0.5
+
+    const messageRef: any = useRef(null);
+    
+    const scrollToBottom = () => {
+        messageRef.current.scrollIntoView({behavior: "smooth"})
+    }
+
+    useEffect(scrollToBottom);
+
     return (
         <div className='message-template'>
-            <img src={r_img} className='user-icon' alt='Icon to identify users' />
+            <img src={props.img} className='user-icon' alt='Icon to identify users' />
             <div className='message-package'>
-                <p className='user-name'>Ryan</p>
-                <p className='message-text'>Testing my message.</p>
-                <small className='time-stamp'>Thursday July 27th 9:30pm</small>
+                <p className='user-name'>{props.name}</p>
+                <p className='message-text'>{props.message}</p>
+                <small className='time-stamp'>{props.timestamp}</small>
             </div>
+            <div ref={messageRef}></div>
         </div>
     );
 };
 
-export default message_template;
+export default Message_Template;

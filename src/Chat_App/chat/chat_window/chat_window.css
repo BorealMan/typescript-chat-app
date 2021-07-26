@@ -5,15 +5,14 @@
     height: 81%;
     display: block;
     background-color: white;
+    border: 1px solid black;
+    overflow-y: auto;
 }
 
 .messages{
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     padding: 3px;
-}
-
-.message-holder{
-    display:inline-block;
-    color: white;
+    text-align: bottom;
 }

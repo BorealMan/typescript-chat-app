@@ -8,7 +8,9 @@
   flex-direction: row;
   width: 100%;
   background: lightblue;
+  border: 1px solid grey;
   padding: 0.5rem;
+  margin-top: .33rem;
 }
 
 .message-package {
@@ -17,7 +19,6 @@
 }
 
 .user-icon {
-  display: block;
   max-height: 2.5rem;
   max-width: 2.5rem;
   border-radius: 50%;
@@ -27,20 +28,20 @@
 
 .user-icon:hover {
   cursor: pointer;
-  border: 1px solid red;
+  border: 1px solid gray;
 }
 
 .user-name {
   text-align: left;
   margin-right: 2px;
   margin-left: 1rem;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
 .user-name:hover {
   cursor: pointer;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 .message-text {
@@ -50,4 +51,6 @@
 
 .time-stamp {
   text-align: right;
+  display: block;
+  font-size: .7rem;
 }
