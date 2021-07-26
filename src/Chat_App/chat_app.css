@@ -1,8 +1,13 @@
 
 .functional-container {
+    box-sizing: border-box;
     display: flex;
     height: 32rem;
-    width: 50rem;
-    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.header {
+    box-sizing: border-box;
+    width: 100%;
 }
 

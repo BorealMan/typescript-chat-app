@@ -3,9 +3,10 @@
 }
 
 .App {
+  box-sizing: border-box;
   margin: .3rem auto;
   width: 50rem;
-  height: 32rem;
   text-align: center;
   justify-content: center;
+  background-color: black;
 }

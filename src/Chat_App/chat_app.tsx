@@ -8,8 +8,10 @@ import Rooms from './rooms/rooms';
 const Chat_App: any = () => {
     return (
         <div>
-            <Header />
-            <div className="functional-container">
+            <div className='header-container'>
+                <Header />
+            </div>
+            <div className='functional-container'>
                 <Rooms />
                 <Chat />
                 <Users />
