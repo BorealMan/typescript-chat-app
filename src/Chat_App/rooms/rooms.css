@@ -1,6 +1,10 @@
+*, *::after, *::before {box-sizing: border-box;}
+
 .rooms {
     display: block;
     width: 20%;
     height: 100%;
-    border: 1px solid red;
+    padding: 1px;
+    background-color: lavender;
+    border: 1px solid black;
 }

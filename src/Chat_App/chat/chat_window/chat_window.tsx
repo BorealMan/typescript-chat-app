@@ -27,13 +27,7 @@ const initiate_chat = (n: number) => {
 
 const Chat_Window =  () => {
 
-    const [chat_messages, set_messages] = useState(new Array(30))
-    // Initalize
-    if (!ran){
-        // const test = await initiate_chat(message_lines_in_window)
-        ran = true;
-        console.log("I ran")
-    }
+    const [chat_messages, set_messages] = useState(new Array(30));
 
     return (
         <div className='chat-window'>
@@ -42,9 +36,9 @@ const Chat_Window =  () => {
                 { chat_messages }
             </div>
             <div className='chat-window-buttons'>
-                <button onClick={ async () => get_messages() }>DB_TEST</button>
+                {/* <button onClick={ async () => get_messages() }>DB_TEST</button>
                 <button onClick={ async () => {set_messages(initiate_chat(message_lines_in_window))} }>Broken Button</button>
-                <button onClick={async () => {}}>DB_Thing</button>
+                <button onClick={async () => {}}>DB_Thing</button> */}
             </div>
 
         </div>

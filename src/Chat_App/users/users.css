@@ -1,5 +1,7 @@
 
 .users {
     width: 20%;
-    border: 1px solid purple;
+    padding: 1px;
+    background-color: lavender;;
+    border: 1px solid black;
 }

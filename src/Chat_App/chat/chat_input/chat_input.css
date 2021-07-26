@@ -1,5 +1,30 @@
+*, *::before, *::after {box-sizing: border-box;}
 
 .chat-input {
-    border: 1px solid yellow;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-input{
+    border-radius: 2%;
+    height: 6rem;
     width: 100%;
+    padding: .2rem;
+    resize: none;
+    border: 1px solid black;
+    
+}
+
+.send-message {
+    width: 20%;
+    height: 6rem;
+    padding: .2rem;
+}
+
+.send-message:hover {
+    letter-spacing: 1px;
+    background-color: greenyellow;
 }
