@@ -1,11 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import './message_template.css'
 
-let count = 0;
-
 const Message_Template = (props: any) => {
-    count += 0.5
-
     const messageRef: any = useRef(null);
     
     const scrollToBottom = () => {
@@ -15,13 +11,16 @@ const Message_Template = (props: any) => {
     useEffect(scrollToBottom);
 
     return (
-        <div ref={messageRef} className='message-template'>
+        <div>
+            <div ref={messageRef} className='message-template'>
             <img src={props.img} className='user-icon' alt='Icon to identify users' />
             <div className='message-package'>
                 <p className='user-name'>{props.name}</p>
                 <p className='message-text'>{props.message}</p>
                 <small className='time-stamp'>{props.timestamp}</small>
             </div>
+        </div>
+        <div className='message-border' ></div>
         </div>
     );
 };
