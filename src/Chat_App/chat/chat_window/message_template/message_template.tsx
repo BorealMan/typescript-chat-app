@@ -11,7 +11,7 @@ const Message_Template = (props: any) => {
     useEffect(scrollToBottom);
 
     return (
-        <div>
+        <div key={props.id}>
             <div ref={messageRef} className='message-template'>
             <img src={props.img} className='user-icon' alt='Icon to identify users' />
             <div className='message-package'>
