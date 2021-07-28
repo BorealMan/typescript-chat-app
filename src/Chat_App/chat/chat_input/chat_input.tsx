@@ -6,11 +6,15 @@ import './chat_input.css'
 
 const Chat_Input = () => {
 
-    const [Input, setInput] = useState("Test");
+    const [Input, setInput] = useState("test");
 
     const Send_Message = (message: string) => {
-        console.log("Does this work?")
-        Socket.emit("event", message)
+        if(message != "" && message != "test"){
+            Socket.emit("send-message", message)
+        }
+        else {
+            console.log("Error sending message, check input.")
+        }
     }
 
     const handleInput = (event: any) => {
