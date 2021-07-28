@@ -11,7 +11,7 @@ const Chat_Input = () => {
     const Send_Message = (message: string) => {
         if(message != "" && message != "test"){
             console.log(`Sending message: ${message}`)
-            Socket.emit("send-message", message)
+            Socket.emit("send-message", {name: "username", message: message})
             setInput(""); 
         }
         else {

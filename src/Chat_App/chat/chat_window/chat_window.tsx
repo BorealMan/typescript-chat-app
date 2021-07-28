@@ -23,18 +23,18 @@ const Chat_Window = () => {
                 Socket.emit("send-message", {name: "Admin", message:"Welcome to the server!"})
             }
             let lpl: any = []
-            console.log(data)
+            // console.log(data)
             for(let i = 0; i < data.length; i++){
-                lpl.push(<Message_Template img={portraits[2]} id={data[i].id} name={data[i].name} message={data[i].message} timestamp={"Just Now"}/>)
+                lpl.push(<Message_Template img={portraits[data[i].img_index]} id={data[i].id} name={data[i].name} message={data[i].message} timestamp={data[i].date_time}/>)
             }
             set_messageList(messageList.concat(lpl));
-            console.log((messageList: any) => messageList.concat(lpl))
+            //console.log((messageList: any) => messageList.concat(lpl))
         });
         Socket.on("update-messages", (data: any) => {
-            console.log(data)
-            let new_message = <Message_Template id={data[0].id} img={portraits[1]} name={data[0].name} message={data[0].message} timestamp={"Just Now"}/>
+            //console.log(data)
+            let new_message = <Message_Template id={data[0].id} img={portraits[data[0].img_index]} name={data[0].name} message={data[0].message} timestamp={data[0].date_time}/>
             set_messageList(messageList => messageList.concat(new_message))
-            console.log(messageList)
+            //console.log(messageList)
         })
     }, []);
 
@@ -43,7 +43,6 @@ const Chat_Window = () => {
             <div className='messages'>
                 {   
                     messageList.map( (obj: any) => {
-                        console.log(`Rendered ${obj}`)
                         return obj
                     })
                 }
