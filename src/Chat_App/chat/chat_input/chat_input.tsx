@@ -9,7 +9,7 @@ const Chat_Input = () => {
     const [Input, setInput] = useState("");
 
     const Send_Message = (message: string) => {
-        if(message != "" && message != "test"){
+        if(message !== ""){
             console.log(`Sending message: ${message}`)
             Socket.emit("send-message", {name: "username", message: message})
             setInput(""); 

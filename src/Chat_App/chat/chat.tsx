@@ -1,13 +1,13 @@
 import React from 'react'
 import './chat.css'
-import Chat_Window from './chat_window/chat_window'
-import Chat_Input from './chat_input/chat_input'
+import ChatWindow from './chat_window/chat_window'
+import ChatInput from './chat_input/chat_input'
 
 const Chat = () => {
     return (
     <div className='chat'>
-        <Chat_Window />
-        <Chat_Input />
+        <ChatWindow />
+        <ChatInput />
     </div>
     );
 };

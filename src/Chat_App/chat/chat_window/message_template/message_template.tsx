@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react'
+import { format_epochTime } from '../../../utility/time'
 import './message_template.css'
 
 const Message_Template = (props: any) => {
@@ -9,15 +10,15 @@ const Message_Template = (props: any) => {
     }
 
     useEffect(scrollToBottom);
-
+    const ts = format_epochTime(props.timestamp)
     return (
-        <div key={props.id}>
+        <div>
             <div ref={messageRef} className='message-template'>
             <img src={props.img} className='user-icon' alt='Icon to identify users' />
-            <div className='message-package'>
+            <div className='message-package' key={props.id}>
                 <p className='user-name'>{props.name}</p>
                 <p className='message-text'>{props.message}</p>
-                <small className='time-stamp'>{props.timestamp}</small>
+                <small className='time-stamp'>{ts}</small>
             </div>
         </div>
         <div className='message-border' ></div>

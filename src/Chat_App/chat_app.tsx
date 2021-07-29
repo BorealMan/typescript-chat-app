@@ -16,7 +16,6 @@ const Chat_App: any = () => {
                 <Chat />
                 <Users />
             </div>
-
         </div>
     );
 }
